@@ -1,0 +1,401 @@
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Tienne";
+}
+
+/* Custom container */
+.container {
+  /*margin: 0 auto;*/
+  max-width: 1000px;
+}
+  .container > hr {
+    margin: 60px 0;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bree Serif";
+  font-family: "Patua One";
+  font-family: "Antic Slab";
+  font-family: "Ubuntu Condensed";
+}
+h2 {
+  font-size: 35px;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.info-buttons {
+  margin-top: 40px;
+  text-align: center;
+}
+  .btn {
+    margin: 5px;
+  }
+
+#bios {
+  margin-top: 80px;
+}
+  .bio {
+    text-align: center;
+  }
+    .bio .title {
+      margin: 25px 0 0px;
+      color: #AAA;
+    }
+    .bio .name {
+      margin-top: 0;
+    }
+    .bio img {
+      width: 240px;
+      height: 240px;
+    }
+
+.info-pics {
+  text-align: center;
+}
+  .info-pics img {
+    width: 160px;
+    height: 160px;
+    margin: 5px 30px;
+  }
+
+#photo-list {
+  padding: 15px;
+}
+  .photo {
+    margin: 5px;
+    margin-bottom: 10px;
+  }
+
+.photo {
+  max-width: 230px;
+  background-color: #DADADA;
+  border-color: none;
+  border-bottom: 1px solid #C0CBD3;
+}
+  .photo-zoom {
+    max-width: 500px;
+    max-width: 100%;
+  }
+
+
+#small-heart {
+  width: 55px;
+  height: 55px;
+  left: 50%;
+  margin-left: -27px;
+  font-size: 19px;
+  opacity: 0.2;
+  transition: opacity 1s ease;
+}
+
+#small-heart .heart-left {
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  border-left: 1px solid rgba(0, 0, 0, 0.8);
+}
+#small-heart .heart-right {
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  border-right: 1px solid rgba(0, 0, 0, 0.8);
+}
+#small-heart .heart-content {
+  /*border-right: 1px solid;*/
+  /*border-bottom: 1px solid;*/
+}
+.footer:hover #small-heart {
+  opacity: 1;
+}
+.footer {
+  margin-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  position: relative;
+}
+  .footer-left,
+  .footer-right {
+    font-family: "Kaushan Script";
+    font-family: "Mr De Haviland";
+    text-transform: lowercase;
+    color: #fff;
+    font-size: 56px;
+    line-height: 56px;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    opacity: 0.2;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
+  }
+  .footer-left {
+    margin-left: -210px;
+  }
+  .footer-right {
+    margin-left: 50px;
+  }
+/*  .copyright {
+    font-family: "Kaushan Script";
+    color: #aaa;
+    font-size: 15px;
+  }
+    .copy {
+      font-size: 20px;
+      font-family: "Antic Slab";
+      color: #666;
+    }*/
+  .footer h5 {
+    font-size: 17px;
+    color: #aaa;
+  }
+
+/* ==========================================================================
+   Jumbotron
+   ========================================================================== */
+
+.jumbotron {
+  margin: 80px 0;
+  text-align: center;
+  background: none;
+
+}
+  .jumbotron h1 {
+    font-size: 100px;
+    line-height: 1;
+    font-family: "Kaushan Script";
+  }
+  .jumbotron .quote {
+    font-size: 17px;
+    line-height: 1.25;
+    max-width: 600px;
+    margin: 30px auto 0;
+    text-align: justify;
+    text-align: center;
+    font-variant: small-caps;
+  }
+  .jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+
+/* ==========================================================================
+   Red Theme
+   ========================================================================== */
+/*
+.jumbotron {
+  background: none;
+  color: #420707;
+  text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.7);
+  border: 0;
+}
+  .jumbotron h1 {
+    text-shadow: none;
+    color: #270000;
+  }
+  body .jumbotron .heart .heart-content,
+  .jumbotron .heart-left {
+    background-color: #900;
+    border-color: #900;
+  }
+  .jumbotron .quote {
+    text-shadow: none;
+    color: #777;
+  }
+  .jumbotron .heart-right {
+    border-color: #900;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #270000;
+}
+.btn-primary {
+  color: #FFF;
+  background-color: #D33131;
+  border-color: #C32D2D;
+}
+  .btn-primary:hover, 
+  .btn-primary:focus, 
+  .btn-primary:active, 
+  .btn-primary.active, 
+  .open .dropdown-toggle.btn-primary {
+    color: #FFF;
+    background-color: #8A1818;
+    border-color: #791313;
+  }
+*/
+
+/* ==========================================================================
+   Blue Theme
+   ========================================================================== */
+
+body {
+  background-color: #F8FCFF;
+}
+.jumbotron {
+  background: #2BA0BD;
+  margin: -20px -15px 0;
+  padding-top: 90px;
+  border-bottom: 1px solid #2387A0;
+}
+  .jumbotron h1 {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+    color: #FFF;
+  }
+  .jumbotron .quote {
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+    color: #DBF8FF;
+  }
+  body .heart .heart-content,
+  .heart .heart-left {
+    background-color: #105D70;
+    border-color: #105D70;
+  }
+  .heart .heart-right {
+    border-color: #105D70;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #0F5364;
+}
+.footer {
+  background-color: #105D72;
+  border-top: 1px solid #105D70;
+  padding: 50px 0 40px;
+}
+  .footer .heart .heart-content,
+  .footer .heart .heart-left {
+    background-color: #2BA0BD;
+    border-color: #2BA0BD;
+  }
+  footer .heart .heart-right {
+    border-color: #2BA0BD;
+  }
+  .footer h5 {
+    color: #96BAC4;
+  }
+.btn-primary {
+  color: #FFF;
+  background-color: #2BA0BD;
+  border-color: #2893AD;
+}
+  .btn-primary:hover, 
+  .btn-primary:focus, 
+  .btn-primary:active, 
+  .btn-primary.active, 
+  .open .dropdown-toggle.btn-primary {
+    color: #FFF;
+    background-color: #218299;
+    border-color: #135969;
+  }
+
+
+/* ==========================================================================
+   Helpers
+   ========================================================================== */
+
+.btn-hero {
+  padding: 19px 24px;
+  font-size: 24px;
+  font-weight: 200;
+  border: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1), 0 1px 5px rgba(0,0,0,.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+
+.section-title {
+  font-size: 60px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.align-center {
+  text-align: center;
+}
+
+/* ==========================================================================
+   Woven heart
+   ========================================================================== */
+
+#heart {
+  font-size: 30px;
+  height: 120px;
+  width: 120px;
+  left: 50%;
+  margin-left: -60px;
+}
+.heart {
+  position: relative;
+  width: 3em;
+  height: 3em;
+  font-size: 14px;
+  margin: 1.175em;
+}
+  .heart-left,
+  .heart-right {
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    top: -30%;
+  }
+  .heart-left,
+  .heart-right,
+  .heart-bottom,
+  .heart-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+  }
+  .heart-left {
+    z-index: 4;
+    background: #990000;
+    left: -30%;
+  }
+  .heart-right {
+    z-index: 3;
+    background: #fff;
+    right: -30%;
+    border: 1px solid #900;
+  }
+  .heart-content {
+    top: -1px;
+    left: 0;
+    zoom: 1;
+    z-index: 4;
+    border-right: 1px solid #900;
+    border-bottom: 1px solid #900;
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);  
+    filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+
+    background-color: #990000;
+    background-size: 2em 2em;
+    background-position: 0 0, 1em 1em;
+    background-image: 
+      -webkit-linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff),
+      -webkit-linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff);
+    background-image: 
+      -moz-linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff),
+      -moz-linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff);
+    background-image: 
+      linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff),
+      linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff);
+    -pie-background: 
+      linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff) 0 0 / 60px,
+      linear-gradient(45deg, #ffffff 25%, transparent 25%, transparent 75%, #ffffff 75%, #ffffff) 30px 30px / 60px, #ffffff;
+  }
