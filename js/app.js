@@ -6,30 +6,29 @@ $(function() {
   var $photoList = $('#photo-list')
     , $window = $(window)
 
-  var mason = new Masonry($photoList.get(0), {
-    columnWidth: 230
-  , itemSelector: '.photo'
-  , gutter: 15
-  , transitionDuration: '1s'
-  })
-  $photoList.on('layoutComplete', function() { console.log('layout complete') })
+  $photoList.imagesLoaded(function() {
+    var mason = new Masonry($photoList.get(0), {
+      columnWidth: 230
+    , itemSelector: '.photo'
+    , gutter: 15
+    , transitionDuration: '1s'
+    })
 
-  var $photos = $('.photo')
+    var $photos = $('.photo')
 
-  $photos.click(function(e) {
-    var $el = $(e.target)
+    $photos.click(function(e) {
+      var $el = $(e.target)
 
-    $el.insertBefore($('.photo:first-child'))
-    $el
-      .addClass('photo-zoom')
-      .siblings().removeClass('photo-zoom')
+      $el.insertBefore($('.photo:first-child'))
+      $el
+        .addClass('photo-zoom')
+        .siblings().removeClass('photo-zoom')
 
-    // setTimeout(function() {
-     mason.reloadItems()
-     mason.layout()
+       mason.reloadItems()
+       mason.layout()
 
-     $window.scrollTop($photoList.offset().top)
-    // }, 50)
+       $window.scrollTop($photoList.offset().top)
+    })
   })
 })
 
