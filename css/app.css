@@ -258,7 +258,7 @@ body {
   background: #2BA0BD;
   margin: -20px -15px 0;
   border-bottom: 1px solid #2387A0;
-  padding: 100px 0;
+  padding: 100px 40px;
 }
   .jumbotron h1 {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
