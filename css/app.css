@@ -40,6 +40,27 @@ h2 {
     margin: 5px;
   }
 
+.section {
+  padding: 100px 0;
+}
+#bio-wrapper   { background: #F2F4F5; }
+#info-wrapper  { 
+  background: #045D79;
+  color: #fff;
+  border-bottom: 1px solid #004358;
+}
+  #info-wrapper h1,
+  #info-wrapper h2,
+  #info-wrapper h3,
+  #info-wrapper h4,
+  #info-wrapper h5 {
+    color: #C6EAF5;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
+  }
+#photo-wrapper { 
+  border-bottom: 1px solid #eee;
+}
+
 #bios {
   margin-top: 80px;
 }
@@ -113,9 +134,7 @@ h2 {
   opacity: 1;
 }
 .footer {
-  margin-top: 30px;
   text-align: center;
-  padding-bottom: 30px;
   position: relative;
 }
   .footer-left,
@@ -128,7 +147,7 @@ h2 {
     line-height: 56px;
     position: absolute;
     left: 50%;
-    top: 70px;
+    top: 105px;
     opacity: 0.2;
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
   }
@@ -238,8 +257,8 @@ body {
 .jumbotron {
   background: #2BA0BD;
   margin: -20px -15px 0;
-  padding-top: 90px;
   border-bottom: 1px solid #2387A0;
+  padding: 100px 0;
 }
   .jumbotron h1 {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
@@ -264,7 +283,6 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   background-color: #105D72;
   border-top: 1px solid #105D70;
-  padding: 50px 0 40px;
 }
   .footer .heart .heart-content,
   .footer .heart .heart-left {
