@@ -41,7 +41,7 @@ h2 {
   }
 
 .section {
-  padding: 100px 0;
+  padding: 100px 20px;
 }
 #bio-wrapper   { background: #F2F4F5; }
 #info-wrapper  { 
@@ -59,6 +59,10 @@ h2 {
   }
 #photo-wrapper { 
   border-bottom: 1px solid #eee;
+}
+
+#hotel-wrapper {
+  background: #FDFBC7;
 }
 
 #bios {
@@ -130,10 +134,10 @@ h2 {
   /*border-right: 1px solid;*/
   /*border-bottom: 1px solid;*/
 }
-.footer:hover #small-heart {
+#footer-wrapper:hover #small-heart {
   opacity: 1;
 }
-.footer {
+#footer-wrapper {
   text-align: center;
   position: relative;
 }
@@ -167,27 +171,30 @@ h2 {
       font-family: "Antic Slab";
       color: #666;
     }*/
-  .footer h5 {
+  #footer-wrapper h5 {
     font-size: 17px;
     color: #aaa;
+  }
+  @media (max-width: 500px) {
+    .footer-left,
+    .footer-right {
+      display: none;
+    }
   }
 
 /* ==========================================================================
    Jumbotron
    ========================================================================== */
 
-.jumbotron {
-  margin: 80px 0;
+#header-wrapper {
   text-align: center;
-  background: none;
-
 }
-  .jumbotron h1 {
+  #header-wrapper h1 {
     font-size: 100px;
     line-height: 1;
     font-family: "Kaushan Script";
   }
-  .jumbotron .quote {
+  #header-wrapper .quote {
     font-size: 17px;
     line-height: 1.25;
     max-width: 600px;
@@ -196,7 +203,7 @@ h2 {
     text-align: center;
     font-variant: small-caps;
   }
-  .jumbotron .btn {
+  #header-wrapper .btn {
     font-size: 21px;
     padding: 14px 24px;
   }
@@ -205,26 +212,26 @@ h2 {
    Red Theme
    ========================================================================== */
 /*
-.jumbotron {
+#header-wrapper {
   background: none;
   color: #420707;
   text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.7);
   border: 0;
 }
-  .jumbotron h1 {
+  #header-wrapper h1 {
     text-shadow: none;
     color: #270000;
   }
-  body .jumbotron .heart .heart-content,
-  .jumbotron .heart-left {
+  body #header-wrapper .heart .heart-content,
+  #header-wrapper .heart-left {
     background-color: #900;
     border-color: #900;
   }
-  .jumbotron .quote {
+  #header-wrapper .quote {
     text-shadow: none;
     color: #777;
   }
-  .jumbotron .heart-right {
+  #header-wrapper .heart-right {
     border-color: #900;
   }
 
@@ -253,18 +260,17 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   background-color: #F8FCFF;
+  overflow-x: hidden;
 }
-.jumbotron {
+#header-wrapper {
   background: #2BA0BD;
-  margin: -20px -15px 0;
   border-bottom: 1px solid #2387A0;
-  padding: 100px 40px;
 }
-  .jumbotron h1 {
+  #header-wrapper h1 {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
     color: #FFF;
   }
-  .jumbotron .quote {
+  #header-wrapper .quote {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
     color: #DBF8FF;
   }
@@ -280,19 +286,19 @@ body {
 h1, h2, h3, h4, h5, h6 {
   color: #0F5364;
 }
-.footer {
+#footer-wrapper {
   background-color: #105D72;
   border-top: 1px solid #105D70;
 }
-  .footer .heart .heart-content,
-  .footer .heart .heart-left {
+  #footer-wrapper .heart .heart-content,
+  #footer-wrapper .heart .heart-left {
     background-color: #2BA0BD;
     border-color: #2BA0BD;
   }
   footer .heart .heart-right {
     border-color: #2BA0BD;
   }
-  .footer h5 {
+  #footer-wrapper h5 {
     color: #96BAC4;
   }
 .btn-primary {
